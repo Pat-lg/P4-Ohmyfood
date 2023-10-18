@@ -1,7 +1,7 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@import '../Scss/Abstracts/variables';
+@import '../Scss/Abstracts/mixins';
 
-@import 'base/typography';
+@import '../Scss/base/typography';
 
 @import '../Scss/pages/-home.scss';
 @import '../Scss/pages/-page-resto.scss';
