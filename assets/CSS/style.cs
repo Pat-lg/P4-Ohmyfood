@@ -36,6 +36,7 @@ footer {
   flex-direction: column;
   padding-left: 20px;
   background-color: #353535;
+  margin-top: 60px;
 }
 footer p {
   font-family: Shrikhand;
@@ -210,7 +211,7 @@ ol {
 
 .section-restos {
   background: #F6F6F6;
-  padding: 0px 20px 80px 20px;
+  padding: 0 20px;
 }
 .section-restos h2 {
   padding-top: 50px;
@@ -305,7 +306,7 @@ figure #img-header {
 
 .main-container {
   width: 100%;
-  padding: 0 20px;
+  padding-left: 20px;
   border-radius: 40px 40px 0 0;
   background-color: #F6F6F6;
   box-sizing: border-box;
@@ -339,111 +340,16 @@ figure #img-header {
 }
 #menu-title-heart i {
   position: absolute;
-  right: 30px;
-  top: 38px;
-  font-size: 24px;
+  right: 40px;
+  top: 40px;
+  font-size: 23px;
 }
 
-.entrees-menus,
-.plats-menus,
-.desserts-menus {
+.entrees-menus {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  gap: 10px;
-  box-sizing: border-box;
-  padding: 5px 0 30px 0;
+  border: 1px solid red;
 }
 
-.entrees-menu,
-.plats-menu,
-.desserts-menu {
-  border-radius: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  background-color: #fff;
-  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
-  padding-left: 20px;
-  height: 69px;
-  box-sizing: border-box;
-}
-.entrees-menu .price-menu,
-.plats-menu .price-menu,
-.desserts-menu .price-menu {
-  font-size: 15px;
-  font-weight: 700;
-  padding: 0 15px 13px 0;
-}
-.entrees-menu .text-menu,
-.entrees-menu .text-plat,
-.entrees-menu .text-dessert,
-.plats-menu .text-menu,
-.plats-menu .text-plat,
-.plats-menu .text-dessert,
-.desserts-menu .text-menu,
-.desserts-menu .text-plat,
-.desserts-menu .text-dessert {
-  box-sizing: border-box;
-}
-.entrees-menu .text-menu h4,
-.entrees-menu .text-plat h4,
-.entrees-menu .text-dessert h4,
-.plats-menu .text-menu h4,
-.plats-menu .text-plat h4,
-.plats-menu .text-dessert h4,
-.desserts-menu .text-menu h4,
-.desserts-menu .text-plat h4,
-.desserts-menu .text-dessert h4 {
-  margin: 0;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.entrees-menu .text-menu p,
-.entrees-menu .text-plat p,
-.entrees-menu .text-dessert p,
-.plats-menu .text-menu p,
-.plats-menu .text-plat p,
-.plats-menu .text-dessert p,
-.desserts-menu .text-menu p,
-.desserts-menu .text-plat p,
-.desserts-menu .text-dessert p {
-  margin: 0;
-  font-size: 15px;
-  font-weight: 300;
-  padding: 5px 0 13px 0;
-}
-
-.desserts-menus {
-  padding-bottom: 0;
-}
-
-.btn-container {
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F6F6F6;
-}
-
-.commander-btn {
-  width: 218px;
-  height: 50px;
-  border-radius: 25px;
-  border: none;
-  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
-  color: #fff;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */
