@@ -71,7 +71,14 @@ hgroup {
   box-shadow: 0px 4px 10px 0px #00000040;
   @include center-xy;
   margin: 10px 0 45px 0;
+
+  &.btn-gradient:hover {
+    box-shadow: 0px 4px 15px 0px #00000059;
+    opacity: 0.80;
+    cursor: pointer;
+  }
 }
+
 
 .section-fonctionnement {
   h2 {
@@ -83,7 +90,6 @@ hgroup {
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
-
   }
 }
 
@@ -130,10 +136,6 @@ ol {
     font-size: 20px;
   }
 
-  .fa-store {
-    color: $primaryColor;
-  }
-
   p {
     margin-left: 25px;
     text-align: center;
@@ -149,9 +151,7 @@ ol {
   background: $bgColor;
   padding: 0px 20px 80px 20px;
 
-
   h2 {
-
     padding-top: 50px;
     margin-bottom: 20px;
     font-size: 24px;
@@ -241,4 +241,3 @@ ol {
     }
   }
 }
-

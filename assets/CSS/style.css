@@ -138,6 +138,11 @@ hgroup p {
   align-items: center;
   margin: 10px 0 45px 0;
 }
+.btn-gradient.btn-gradient:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+  opacity: 0.8;
+  cursor: pointer;
+}
 
 .section-fonctionnement h2 {
   margin-left: 20px;
@@ -194,9 +199,6 @@ ol {
   width: 18px;
   margin-left: 25px;
   font-size: 20px;
-}
-.function-list .fa-store {
-  color: #9356DC;
 }
 .function-list p {
   margin-left: 25px;
@@ -444,6 +446,11 @@ figure #img-header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.commander-btn.commander-btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
