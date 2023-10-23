@@ -137,6 +137,9 @@ hgroup p {
   justify-content: center;
   align-items: center;
   margin: 10px 0 45px 0;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .btn-gradient.btn-gradient:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
@@ -174,6 +177,9 @@ ol {
   background: #F6F6F6;
   margin-bottom: 25px;
   padding: 0.7em;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .function-list::before {
   counter-increment: liste;
@@ -190,6 +196,9 @@ ol {
   align-items: center;
   margin-left: -20px;
   font-size: 13px;
+}
+.function-list:hover {
+  transform: scale(1.03);
 }
 .function-list i {
   display: flex;
@@ -369,6 +378,15 @@ figure #img-header {
   padding-left: 20px;
   height: 69px;
   box-sizing: border-box;
+  transition-property: transform;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.entrees-menu:hover,
+.plats-menu:hover,
+.desserts-menu:hover {
+  transform: scale(1.02);
 }
 .entrees-menu .price-menu,
 .plats-menu .price-menu,
@@ -446,6 +464,9 @@ figure #img-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .commander-btn.commander-btn:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
