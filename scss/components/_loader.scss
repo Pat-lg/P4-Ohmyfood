@@ -1,0 +1,51 @@
+.loader {
+  position: fixed;
+  @include center-xy;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  z-index: 20;
+  animation: hidden 2s forwards;
+
+  &::after {
+    content: "";
+    width: 500px;
+    height: 200px;
+    border-radius: 50%;
+    border: 15px solid $bgColor;
+    border-top: 15px solid $primaryColor;
+    border-bottom: 15px solid $primaryColor;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear 1;
+  }
+}
+
+
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
