@@ -3,6 +3,21 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.full-heart {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+.full-heart:hover {
+  opacity: 1;
+  background-image: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .header {
   height: 63px;
   display: flex;
@@ -15,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  z-index: 1;
+  z-index: 10;
 }
 .header .logo a {
   text-decoration: none;
@@ -177,6 +192,7 @@ ol {
   background: #F6F6F6;
   margin-bottom: 25px;
   padding: 0.7em;
+  cursor: pointer;
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -198,7 +214,10 @@ ol {
   font-size: 13px;
 }
 .function-list:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
+}
+.function-list:hover i {
+  color: #9356DC;
 }
 .function-list i {
   display: flex;

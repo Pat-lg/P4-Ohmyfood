@@ -62,7 +62,7 @@ hgroup {
   height: 50px;
   border-radius: 25px;
   border: none;
-  background: $bg-Button;
+  background: $bgButton;
   color: #fff;
   font-family: 'Roboto';
   font-weight: 500;
@@ -80,7 +80,6 @@ hgroup {
     cursor: pointer;
   }
 }
-
 
 .section-fonctionnement {
   h2 {
@@ -114,6 +113,7 @@ ol {
   background: $bgColor;
   margin-bottom: 25px;
   padding: 0.7em;
+  cursor: pointer;
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -133,8 +133,12 @@ ol {
     font-size: 13px;
   }
 
-  &:hover {
-    transform: scale(1.03);
+  &:hover  {
+    transform: scale(1.02);
+  }
+
+  &:hover i {
+    color: $primaryColor;
   }
 
   i {
@@ -155,7 +159,6 @@ ol {
     text-align: left;
   }
 }
-
 
 .section-restos {
   background: $bgColor;
