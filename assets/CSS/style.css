@@ -28,7 +28,7 @@ body {
 .full-heart {
   opacity: 0;
   transition-property: all;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
   cursor: pointer;
 }
@@ -90,7 +90,6 @@ body {
 .header {
   height: 63px;
   display: flex;
-  flex-direction: column;
 }
 .header .logo {
   height: 63px;
@@ -98,7 +97,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   z-index: 10;
 }
 .header .logo a {
@@ -152,6 +150,10 @@ footer ul i {
 body {
   margin: 0;
   box-sizing: border-box;
+}
+
+#logo-shadow {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .icon-location {
@@ -333,6 +335,10 @@ ol {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 20px;
 }
+.section-restos a:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
 
 .resto-card {
   height: 251px;
@@ -393,6 +399,20 @@ ol {
   font-weight: 300;
 }
 
+#arrow-left {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+}
+#arrow-left i {
+  font-size: 21px;
+  color: #353535;
+}
+
+#centre-logo {
+  margin-left: -26px;
+}
+
 figure {
   margin: 0;
 }
@@ -439,7 +459,7 @@ figure #img-header {
 }
 #menu-title-heart i {
   position: absolute;
-  right: 30px;
+  right: 25px;
   top: 38px;
   font-size: 24px;
 }
@@ -448,7 +468,6 @@ figure #img-header {
 .plats-menus,
 .desserts-menus {
   display: grid;
-  grid-template-columns: 1fr;
   width: 100%;
   gap: 10px;
   box-sizing: border-box;
@@ -471,19 +490,60 @@ figure #img-header {
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
+  overflow: hidden;
 }
 .entrees-menu:hover,
 .plats-menu:hover,
 .desserts-menu:hover {
-  transform: scale(1.02);
   cursor: pointer;
+}
+.entrees-menu:hover .price-menu,
+.plats-menu:hover .price-menu,
+.desserts-menu:hover .price-menu {
+  transform: translateX(0px);
+}
+.entrees-menu:hover .price-menu i,
+.plats-menu:hover .price-menu i,
+.desserts-menu:hover .price-menu i {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .entrees-menu .price-menu,
 .plats-menu .price-menu,
 .desserts-menu .price-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 95px;
+  height: 100%;
+  box-sizing: border-box;
+  transform: translateX(59px);
+  transition: 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+.entrees-menu .price-menu p,
+.plats-menu .price-menu p,
+.desserts-menu .price-menu p {
   font-size: 15px;
   font-weight: 700;
-  padding: 0 15px 13px 0;
+  padding-top: 30px;
+}
+.entrees-menu .price-menu i,
+.plats-menu .price-menu i,
+.desserts-menu .price-menu i {
+  width: 59px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #99E2D0;
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+  display: none;
 }
 .entrees-menu .text-menu,
 .entrees-menu .text-plat,
@@ -495,6 +555,7 @@ figure #img-header {
 .desserts-menu .text-plat,
 .desserts-menu .text-dessert {
   box-sizing: border-box;
+  overflow: hidden;
 }
 .entrees-menu .text-menu h4,
 .entrees-menu .text-plat h4,
@@ -512,6 +573,9 @@ figure #img-header {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .entrees-menu .text-menu p,
 .entrees-menu .text-plat p,
@@ -526,6 +590,9 @@ figure #img-header {
   font-size: 15px;
   font-weight: 300;
   padding: 5px 0 13px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .desserts-menus {

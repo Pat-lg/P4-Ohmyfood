@@ -1,3 +1,18 @@
+#arrow-left {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+
+  i {
+    font-size: 21px;
+    color: $darkGrey;
+  }
+}
+
+#centre-logo {
+  margin-left: -26px;
+}
+
 
 figure {
   margin: 0;
@@ -49,7 +64,7 @@ figure {
 
   i {
     position: absolute;
-    right: 30px;
+    right: 25px;
     top: 38px;
     font-size: 24px;
   }
@@ -59,11 +74,11 @@ figure {
 .plats-menus,
 .desserts-menus {
   display: grid;
-  grid-template-columns: 1fr;
   width: 100%;
   gap: 10px;
   box-sizing: border-box;
-  padding: 5px 0 30px 0;}
+  padding: 5px 0 30px 0;
+}
 
 .entrees-menu,
 .plats-menu,
@@ -81,21 +96,55 @@ figure {
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
+  overflow: hidden;
+
   &:hover {
-    transform: scale(1.02);
     cursor: pointer;
+
+    .price-menu {
+      transform: translateX(0px);
+
+      i {
+        display: block;
+        @include center-xy;
+      }
+    }
+
   }
 
   .price-menu {
-    font-size: 15px;
-    font-weight: 700;
-    padding: 0 15px 13px 0;
+    @include center-xy;
+    justify-content: space-between;
+    width: 95px;
+    height: 100%;
+    box-sizing: border-box;
+    transform: translateX(59px);
+    transition: 0.3s ease-in-out;
+    flex-shrink: 0;
+
+    p {
+      font-size: 15px;
+      font-weight: 700;
+      padding-top: 30px;
+    }
+
+    i {
+      width: 59px;
+      height: 100%;
+      @include center-xy;
+      font-size: 20px;
+      background-color: $tertiaryColor;
+      color: #fff;
+      border-radius: 0 15px 15px 0;
+      display: none;
+    }
   }
 
   .text-menu,
   .text-plat,
   .text-dessert {
     box-sizing: border-box;
+    overflow: hidden;
 
     h4 {
       margin: 0;
@@ -105,6 +154,9 @@ figure {
       line-height: 21px;
       letter-spacing: 0em;
       text-align: left;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
     p {
@@ -112,6 +164,9 @@ figure {
       font-size: 15px;
       font-weight: 300;
       padding: 5px 0 13px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 }
