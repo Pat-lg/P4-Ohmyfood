@@ -4,7 +4,7 @@ footer {
   flex-direction: column;
   padding-left: 20px;
   background-color: $darkGrey;
- 
+
 
   p {
     font-family: Shrikhand;
@@ -25,14 +25,67 @@ footer {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
+
     li {
       padding-bottom: 8px;
     }
+
     i {
       width: 20px;
       font-size: 14px;
       padding-right: 4px;
       color: #fff;
+    }
+  }
+}
+
+@media (min-width: 767.98px) {
+  footer {
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    p {
+      margin-bottom: 27px;
+      padding-right: 80px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+
+  footer {
+    height: 114px;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    p {
+      margin-bottom: 27px;
+      padding-right: 80px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      width: 690px;
+      height: 20px;
+      gap: 7px;
+
+      li {
+        padding: 0;
+      }
+
+      li:nth-child(2) {
+        margin-right: 30px;
+      }
+
+      li:nth-child(3) {
+        margin-right: 10px;
+      }
+
     }
   }
 }

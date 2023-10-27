@@ -137,10 +137,10 @@ ol {
     font-size: 13px;
   }
 
-  &:hover  {
+  &:hover {
     transform: scale(1.02);
     background: white;
-    
+
   }
 
   &:hover i {
@@ -192,9 +192,11 @@ ol {
     color: inherit;
     box-shadow: 0px 4px 15px 0px #0000001A;
     border-radius: 20px;
+    transition: 0.2s ease-in-out;
+
     &:hover {
-      transform: scale(1.02) ;
-      transition: 0.2s;
+      transform: scale(1.02);
+
     }
   }
 }
@@ -219,7 +221,7 @@ ol {
 
   span {
     position: absolute;
-    right: 10px;
+    right: 13px;
     top: 20px;
     font-family: Roboto;
     font-size: 14px;
@@ -264,3 +266,61 @@ ol {
     }
   }
 }
+
+/****** Media queries ***********/
+
+
+@media (min-width: 767.98px) {
+
+  /***  header   ***/
+
+  .header {
+    height: 96px;
+
+    #logo-shadow {
+      height: 96px;
+
+      a {
+        height: 96px;
+
+        img {
+          display: block;
+          width: 200px;
+          height: 34.2px;
+          padding-top: 30px;
+        }
+
+        .logo-mobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+  /*** fonctionnement  ***/
+
+  ol {
+    margin: 0 100px;
+  }
+
+  /*** section restaurant ***/
+
+  .section-restos {
+    .resto-cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      width: 100%;
+      padding: 0px 15px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+body {
+  max-width: 1440px;
+  margin: auto;
+
+}}

@@ -147,6 +147,47 @@ footer ul i {
   color: #fff;
 }
 
+@media (min-width: 767.98px) {
+  footer {
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  footer p {
+    margin-bottom: 27px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 900px) {
+  footer {
+    height: 114px;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  footer p {
+    margin-bottom: 27px;
+    padding-right: 80px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    width: 690px;
+    height: 20px;
+    gap: 7px;
+  }
+  footer ul li {
+    padding: 0;
+  }
+  footer ul li:nth-child(2) {
+    margin-right: 30px;
+  }
+  footer ul li:nth-child(3) {
+    margin-right: 10px;
+  }
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -334,10 +375,10 @@ ol {
   color: inherit;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 20px;
+  transition: 0.2s ease-in-out;
 }
 .section-restos a:hover {
   transform: scale(1.02);
-  transition: 0.2s;
 }
 
 .resto-card {
@@ -357,7 +398,7 @@ ol {
 }
 .resto-card span {
   position: absolute;
-  right: 10px;
+  right: 13px;
   top: 20px;
   font-family: Roboto;
   font-size: 14px;
@@ -399,6 +440,46 @@ ol {
   font-weight: 300;
 }
 
+/****** Media queries ***********/
+@media (min-width: 767.98px) {
+  /***  header   ***/
+  .header {
+    height: 96px;
+  }
+  .header #logo-shadow {
+    height: 96px;
+  }
+  .header #logo-shadow a {
+    height: 96px;
+  }
+  .header #logo-shadow a img {
+    display: block;
+    width: 200px;
+    height: 34.2px;
+    padding-top: 30px;
+  }
+  .header #logo-shadow a .logo-mobile {
+    display: none;
+  }
+  /*** fonctionnement  ***/
+  ol {
+    margin: 0 100px;
+  }
+  /*** section restaurant ***/
+  .section-restos .resto-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
 #arrow-left {
   display: flex;
   align-items: center;
