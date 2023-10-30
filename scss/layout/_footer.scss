@@ -27,6 +27,14 @@ footer {
 
     li {
       padding-bottom: 8px;
+      a:hover{
+        color: $primaryColor;
+        transition-delay:0.1s ;
+        & i {
+          color: $primaryColor;
+          transition-delay: 0.1s;
+        }
+      }   
     }
 
     i {
@@ -37,6 +45,8 @@ footer {
     }
   }
 }
+
+
 
 @media (min-width: 767.98px) {
   footer {

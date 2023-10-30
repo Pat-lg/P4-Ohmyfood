@@ -195,7 +195,6 @@ ol {
 
     &:hover {
       transform: scale(1.02);
-
     }
   }
 }
@@ -212,7 +211,6 @@ ol {
   img {
     height: 176px;
     width: 100%;
-
     object-fit: cover;
     box-sizing: border-box;
     border-radius: 20px 20px 0 0;
@@ -269,32 +267,7 @@ ol {
 /****** Media queries ***********/
 
 
-@media (min-width: 767.98px) {
-
-  /***  header   ***/
-
-  .header {
-    height: 96px;
-
-    #logo-shadow {
-      height: 96px;
-
-      a {
-        height: 96px;
-
-        img {
-          display: block;
-          width: 200px;
-          height: 34.2px;
-          padding-top: 30px;
-        }
-
-        .logo-mobile {
-          display: none;
-        }
-      }
-    }
-  }
+@media (min-width: 768px) {
 
 
   /*** fonctionnement  ***/
@@ -322,17 +295,13 @@ ol {
     margin: auto;
   }
 
-ol {
-  padding-bottom: 30px;
-}
+  ol {
+    padding-bottom: 30px;
+  }
+
   .section-restos {
     padding-bottom: 30px;
-    h2 {
-      margin: 0;
-      padding-top: 25px;
-      padding-bottom: 30px;
-      padding-left: 9%;
-    }
+
     .resto-cards {
       padding-left: 9%;
       padding-right: 10%;
@@ -364,6 +333,15 @@ ol {
       display: flex;
       flex-direction: row;
       gap: 30px;
+    }
+  }
+
+  .section-restos {
+    h2 {
+      margin: 0;
+      padding-top: 25px;
+      padding-bottom: 30px;
+      padding-left: 9%;
     }
   }
 }

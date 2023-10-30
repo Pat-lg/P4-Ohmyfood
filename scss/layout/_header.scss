@@ -28,3 +28,31 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+
+  /***  header   ***/
+
+  .header {
+    height: 96px;
+
+    #logo-shadow { 
+      height: 96px;
+
+      a {
+        height: 96px;
+
+        img {
+          display: block;
+          width: 200px;
+          height: 34.2px;
+          padding-top: 30px;
+        }
+
+        .logo-mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -113,6 +113,27 @@ body {
   font-weight: 400;
 }
 
+@media (min-width: 768px) {
+  /***  header   ***/
+  .header {
+    height: 96px;
+  }
+  .header #logo-shadow {
+    height: 96px;
+  }
+  .header #logo-shadow a {
+    height: 96px;
+  }
+  .header #logo-shadow a img {
+    display: block;
+    width: 200px;
+    height: 34.2px;
+    padding-top: 30px;
+  }
+  .header #logo-shadow a .logo-mobile {
+    display: none;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -139,6 +160,14 @@ footer ul {
 }
 footer ul li {
   padding-bottom: 8px;
+}
+footer ul li a:hover {
+  color: #9356DC;
+  transition-delay: 0.1s;
+}
+footer ul li a:hover i {
+  color: #9356DC;
+  transition-delay: 0.1s;
 }
 footer ul i {
   width: 20px;
@@ -441,26 +470,7 @@ ol {
 }
 
 /****** Media queries ***********/
-@media (min-width: 767.98px) {
-  /***  header   ***/
-  .header {
-    height: 96px;
-  }
-  .header #logo-shadow {
-    height: 96px;
-  }
-  .header #logo-shadow a {
-    height: 96px;
-  }
-  .header #logo-shadow a img {
-    display: block;
-    width: 200px;
-    height: 34.2px;
-    padding-top: 30px;
-  }
-  .header #logo-shadow a .logo-mobile {
-    display: none;
-  }
+@media (min-width: 768px) {
   /*** fonctionnement  ***/
   ol {
     margin: 0 100px;
@@ -483,12 +493,6 @@ ol {
   }
   .section-restos {
     padding-bottom: 30px;
-  }
-  .section-restos h2 {
-    margin: 0;
-    padding-top: 25px;
-    padding-bottom: 30px;
-    padding-left: 9%;
   }
   .section-restos .resto-cards {
     padding-left: 9%;
@@ -517,6 +521,12 @@ ol {
     flex-direction: row;
     gap: 30px;
   }
+  .section-restos h2 {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-left: 9%;
+  }
 }
 #arrow-left {
   display: flex;
@@ -526,6 +536,10 @@ ol {
 #arrow-left i {
   font-size: 21px;
   color: #353535;
+}
+
+#logo-shadow {
+  box-shadow: none;
 }
 
 #centre-logo {
@@ -572,9 +586,9 @@ figure #img-header {
 }
 #menu-title-heart h2 {
   font-family: Shrikhand;
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 400;
-  margin-top: 30px;
+  margin-top: 33px;
 }
 #menu-title-heart i {
   position: absolute;
@@ -748,6 +762,13 @@ figure #img-header {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
   opacity: 0.8;
   cursor: pointer;
+}
+
+@media (min-width: 365px) {
+  #menu-title-heart h2 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
