@@ -592,7 +592,7 @@ figure #img-header {
 }
 #menu-title-heart i {
   position: absolute;
-  right: 25px;
+  right: 20px;
   top: 38px;
   font-size: 24px;
 }
@@ -602,46 +602,53 @@ figure #img-header {
 .desserts-menus {
   display: grid;
   width: 100%;
+  position: relative;
   gap: 10px;
   box-sizing: border-box;
   padding: 5px 0 30px 0;
 }
 
+.container {
+  height: 69px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 15px;
+}
+.container:hover {
+  cursor: pointer;
+}
+.container:hover .check {
+  animation: check 0.3s ease-in-out both;
+}
+.container:hover .price-menu {
+  animation: check 0.3s ease-in-out both;
+}
+.container:hover .text-menu {
+  padding-right: 59px;
+}
+
+@keyframes check {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-59px);
+  }
+}
 .entrees-menu,
 .plats-menu,
 .desserts-menu {
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   background-color: #fff;
-  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1019607843);
   padding-left: 20px;
   height: 69px;
   box-sizing: border-box;
-  transition-property: transform;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
   overflow: hidden;
-}
-.entrees-menu:hover,
-.plats-menu:hover,
-.desserts-menu:hover {
-  cursor: pointer;
-}
-.entrees-menu:hover .price-menu,
-.plats-menu:hover .price-menu,
-.desserts-menu:hover .price-menu {
-  transform: translateX(0px);
-}
-.entrees-menu:hover .price-menu i,
-.plats-menu:hover .price-menu i,
-.desserts-menu:hover .price-menu i {
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .entrees-menu .price-menu,
 .plats-menu .price-menu,
@@ -650,11 +657,9 @@ figure #img-header {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  width: 95px;
+  width: 36px;
   height: 100%;
   box-sizing: border-box;
-  transform: translateX(59px);
-  transition: 0.3s ease-in-out;
   flex-shrink: 0;
 }
 .entrees-menu .price-menu p,
@@ -663,20 +668,6 @@ figure #img-header {
   font-size: 15px;
   font-weight: 700;
   padding-top: 30px;
-}
-.entrees-menu .price-menu i,
-.plats-menu .price-menu i,
-.desserts-menu .price-menu i {
-  width: 59px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  background-color: #99E2D0;
-  color: #fff;
-  border-radius: 0 15px 15px 0;
-  display: none;
 }
 .entrees-menu .text-menu,
 .entrees-menu .text-plat,
@@ -687,6 +678,7 @@ figure #img-header {
 .desserts-menu .text-menu,
 .desserts-menu .text-plat,
 .desserts-menu .text-dessert {
+  width: calc(100% - 36px);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -728,6 +720,22 @@ figure #img-header {
   text-overflow: ellipsis;
 }
 
+.check {
+  width: 59px;
+  min-width: 59px;
+  height: 69px;
+  right: -59px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 20px;
+  background-color: #99E2D0;
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+}
+
 .desserts-menus {
   padding-bottom: 0;
 }
@@ -764,7 +772,7 @@ figure #img-header {
   cursor: pointer;
 }
 
-@media (min-width: 365px) {
+@media (min-width: 370px) {
   #menu-title-heart h2 {
     font-size: 28px;
     margin-top: 30px;
