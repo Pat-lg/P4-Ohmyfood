@@ -90,6 +90,7 @@ figure {
   overflow: hidden;
   width: 100%;
   border-radius: 15px;
+  box-shadow: 0 4px 15px 0 #0000001A;
 
   &:hover {
     cursor: pointer;
@@ -126,7 +127,6 @@ figure {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 4px 15px 0 #0000001A;
   padding-left: 20px;
   height: 69px;
   box-sizing: border-box;
@@ -171,7 +171,7 @@ figure {
       margin: 0;
       font-size: 15px;
       font-weight: 300;
-      padding: 5px 0 13px 0;
+      padding-top: 5px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -226,6 +226,9 @@ figure {
   }
 }
 
+
+/****** Media queries ***********/
+
 @media (min-width: 370px) {
 
   #menu-title-heart {
@@ -233,5 +236,37 @@ figure {
       font-size: 28px;
       margin-top: 30px;
     }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .main-container {
+    width: 80%;
+    margin: auto;
+    margin-top: -40px;
+
+    #menu-title-heart {
+      justify-content: center;
+      width: 500px;
+      margin: auto;
+
+      i {
+        right: 70px;
+      }
+    }
+
+  }
+
+  .btn-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .entrees-section,
+  .plats-section,
+  .desserts-section {
+    margin-left: 16%;
+    margin-right: 16%;
   }
 }

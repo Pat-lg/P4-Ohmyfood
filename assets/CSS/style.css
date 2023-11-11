@@ -614,6 +614,7 @@ figure #img-header {
   overflow: hidden;
   width: 100%;
   border-radius: 15px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1019607843);
 }
 .container:hover {
   cursor: pointer;
@@ -644,7 +645,6 @@ figure #img-header {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1019607843);
   padding-left: 20px;
   height: 69px;
   box-sizing: border-box;
@@ -714,7 +714,7 @@ figure #img-header {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
-  padding: 5px 0 13px 0;
+  padding-top: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -772,10 +772,36 @@ figure #img-header {
   cursor: pointer;
 }
 
+/****** Media queries ***********/
 @media (min-width: 370px) {
   #menu-title-heart h2 {
     font-size: 28px;
     margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .main-container {
+    width: 80%;
+    margin: auto;
+    margin-top: -40px;
+  }
+  .main-container #menu-title-heart {
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+  }
+  .main-container #menu-title-heart i {
+    right: 70px;
+  }
+  .btn-container {
+    width: 80%;
+    margin: auto;
+  }
+  .entrees-section,
+  .plats-section,
+  .desserts-section {
+    margin-left: 16%;
+    margin-right: 16%;
   }
 }
 
