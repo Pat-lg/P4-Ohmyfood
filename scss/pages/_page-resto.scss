@@ -1,3 +1,6 @@
+body {
+  max-width: $maxWidth;
+}
 #arrow-left {
   display: flex;
   align-items: center;
@@ -95,10 +98,7 @@ figure {
   &:hover {
     cursor: pointer;
 
-    .check {
-      animation: check 0.3s ease-in-out both;
-    }
-
+    .check,
     .price-menu {
       animation: check 0.3s ease-in-out both;
     }
@@ -162,9 +162,7 @@ figure {
       line-height: 21px;
       letter-spacing: 0em;
       text-align: left;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+      @include ellipsis;
     }
 
     p {
@@ -172,9 +170,7 @@ figure {
       font-size: 15px;
       font-weight: 300;
       padding-top: 5px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+      @include ellipsis;
     }
   }
 }
@@ -226,7 +222,6 @@ figure {
   }
 }
 
-
 /****** Media queries ***********/
 
 @media (min-width: 370px) {
@@ -255,7 +250,6 @@ figure {
         right: 70px;
       }
     }
-
   }
 
   .btn-container {

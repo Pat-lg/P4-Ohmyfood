@@ -42,9 +42,8 @@ body {
 
 .loader {
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   height: 100vh;
   right: 0;
   top: 0;
@@ -220,6 +219,7 @@ footer ul i {
 body {
   margin: 0;
   box-sizing: border-box;
+  max-width: 1990px;
 }
 
 #logo-shadow {
@@ -229,9 +229,8 @@ body {
 .icon-location {
   height: 50px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   background-color: #EAEAEA;
 }
 .icon-location i {
@@ -289,9 +288,8 @@ hgroup p {
   font-weight: 500;
   font-size: 16px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   margin: 10px 0 45px 0;
   transition-delay: 0s;
   transition-duration: 0.2s;
@@ -348,9 +346,8 @@ ol {
   height: 24px;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   margin-left: -20px;
   font-size: 13px;
 }
@@ -362,9 +359,8 @@ ol {
   color: #9356DC;
 }
 .function-list i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   color: #7E7E7E;
   width: 18px;
   margin-left: 21px;
@@ -439,9 +435,8 @@ ol {
   color: #008766;
   background-color: #99E2D0;
   border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
 .resto-card .bottom-card {
   height: 30%;
@@ -528,6 +523,10 @@ ol {
     padding-left: 9%;
   }
 }
+body {
+  max-width: 1990px;
+}
+
 #arrow-left {
   display: flex;
   align-items: center;
@@ -619,9 +618,7 @@ figure #img-header {
 .container:hover {
   cursor: pointer;
 }
-.container:hover .check {
-  animation: check 0.3s ease-in-out both;
-}
+.container:hover .check,
 .container:hover .price-menu {
   animation: check 0.3s ease-in-out both;
 }
@@ -653,9 +650,8 @@ figure #img-header {
 .entrees-menu .price-menu,
 .plats-menu .price-menu,
 .desserts-menu .price-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   justify-content: space-between;
   width: 36px;
   height: 100%;
@@ -726,9 +722,8 @@ figure #img-header {
   height: 69px;
   right: -59px;
   top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   position: absolute;
   font-size: 20px;
   background-color: #99E2D0;
@@ -742,9 +737,8 @@ figure #img-header {
 
 .btn-container {
   height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   background-color: #F6F6F6;
 }
 
@@ -759,9 +753,8 @@ figure #img-header {
   font-weight: 500;
   font-size: 16px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
