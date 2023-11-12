@@ -270,6 +270,11 @@ ol {
 
 @media (min-width: 768px) {
 
+  .icon-location {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+  }
 
   /*** fonctionnement  ***/
 

@@ -466,6 +466,11 @@ ol {
 
 /****** Media queries ***********/
 @media (min-width: 768px) {
+  .icon-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   /*** fonctionnement  ***/
   ol {
     margin: 0 100px;
